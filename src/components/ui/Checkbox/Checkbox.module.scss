@@ -1,0 +1,45 @@
+@use '../variables' as *;
+
+.checkbox {
+  opacity: 0;
+  z-index: -100;
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+
+  //&:focus + label {
+  //  box-shadow: $checkbox-shadow-focus;
+  //}
+  //
+  //&:focus:not(:focus-visible) + label {
+  //  box-shadow: inherit;
+  //}
+
+  &:hover + label {
+    box-shadow: $checkbox-shadow-hover;
+  }
+
+  & + label {
+    cursor: pointer;
+    display: inline-block;
+    width: $checkbox-size;
+    height: $checkbox-size;
+    background-color: $checkbox-bg-color;
+    padding: $checkbox-border-thickness * 2;
+
+    border-radius: 25%;
+    border: $checkbox-border-thickness solid $checkbox-border-color;
+
+    transition: all 0.3s ease;
+  }
+
+  &:checked + label {
+    background-color: $checkbox-bg-color-checked;
+    outline-color: $checkbox-border-color-checked;
+    transition: all 0.3s ease;
+    background-image: url("checked-tick-filled.svg");
+    background-size: contain;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+  }
+}

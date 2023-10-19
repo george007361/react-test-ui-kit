@@ -1,0 +1,35 @@
+// Переопределить дефолтные стили
+
+@import "../../index";
+
+// Дефолные стили
+// МБ их лучше хранить в папке с компонентами? Но с другой стороны тут сразу всё видно
+
+// Button styles
+$btn-text-color: white !default;
+$btn-font-size: 100px !default;
+$btn-font-weight: inherit !default;
+$btn-min-width: 20px !default;
+$btn-min-height: 20px !default;
+$btn-border: 2px solid #999999 !default;
+$btn-border-hover: 2px solid #a6a6a6 !default;
+$btn-border-focus: 2px solid #888888 !default;
+$btn-bg-color: #e3e3e3 !default;
+$btn-bg-color-hover: #c4c4c4 !default;
+$btn-bg-color-focus: #e3e3e3 !default;
+$btn-bg-color-active: #b0b0b0 !default;
+
+// Checkbox
+$checkbox-size: 18px !default;
+$checkbox-margin: 5px !default;
+$checkbox-padding: 5px !default;
+$checkbox-bg-color: #e3e3e3 !default;
+$checkbox-bg-color-checked: #00FF66 !default;
+$checkbox-shadow: none !default;
+$checkbox-shadow-hover: rgba(0, 0, 0, 0.5) 0px 0px 5px 1px !default;
+$checkbox-border-thickness: 2px !default;
+$checkbox-border-color: #999999 !default;
+$checkbox-border-color-checked: #999999 !default;
+
+// Switch
+// TODO

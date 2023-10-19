@@ -1,0 +1,41 @@
+* {
+  //margin: 0;
+  //padding: 0;
+  outline: none;
+  border: none;
+  background-color: #efefef;
+}
+
+
+// Переопределение дефолтных стилей ui компоненов
+
+// Можно задать их var(--name)
+//  --name разнести в два файла по цветовым темам
+// Только вопрос как их переключать, не успел разобраться
+
+
+// Button styles
+$btn-text-color: orange;
+$btn-font-size: 16px;
+//$btn-font-weight: inherit;
+$btn-min-width: 80px;
+$btn-min-height: 60px;
+$btn-border: 2px solid orange;
+//$btn-border-hover: 2px solid #a6a6a6;
+//$btn-border-focus: 2px solid #888888;
+$btn-bg-color: lighten(orange, 40);
+//$btn-bg-color-hover: #c4c4c4;
+//$btn-bg-color-focus: #e3e3e3;
+//$btn-bg-color-active: #b0b0b0;
+
+// Checkbox
+//$checkbox-size: 18px;
+//$checkbox-margin: 5px;
+//$checkbox-padding: 5px;
+$checkbox-bg-color: lighten(orange, 40);
+$checkbox-bg-color-checked: lighten(green, 60);
+//$checkbox-shadow: none;
+//$checkbox-shadow-hover: rgba(0, 0, 0, 0.5) 0px 0px 5px 1px;
+//$checkbox-border-thickness: 2px;
+$checkbox-border-color: orange;
+$checkbox-border-color-checked: orange;

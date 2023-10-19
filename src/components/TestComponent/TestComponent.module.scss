@@ -1,0 +1,45 @@
+.test_component {
+  padding: 20px;
+  border: 2px solid orange;
+  background-color: white;
+}
+
+
+// Хз как перекрашивать контейнер, надо scss повторить будет
+
+.btn {
+  &__one {
+    color: red;
+  }
+
+  &__two {
+    color: blue;
+  }
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border: 2px solid orange;
+}
+
+.container {
+  background-color: inherit; // Вот тут!!!
+  &__vert {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__hor {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+}

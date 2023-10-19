@@ -1,0 +1,43 @@
+@use '../variables' as *;
+
+.btn {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  transition: 0.3s ease;
+
+  cursor: pointer;
+
+  color: $btn-text-color;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+
+  min-width: $btn-min-width;
+  min-height: $btn-min-height;
+  border-radius: 10px; // 0.25 * $btn-height;
+  border: $btn-border;
+
+  background: $btn-bg-color;
+
+  &:hover {
+    border: $btn-border-hover;
+    background: $btn-bg-color-hover;
+  }
+
+  &:active {
+    background: $btn-bg-color-active;
+  }
+
+  &:focus-visible {
+    border: $btn-border-focus;
+    background: $btn-bg-color-focus;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: red;
+  }
+}
